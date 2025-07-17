@@ -1,5 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 27
@@ -16,17 +15,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-}
-
-publish {
-    publishVersion = '2.1.2'
-
-    userOrg = 'alirezaafkar'
-    groupId = 'com.alirezaafkar'
-    artifactId = 'sundatepicker'
-    uploadName = 'SunDatePicker'
-    desc = 'Date picker for Iranian calendar'
-    website = 'https://github.com/alirezaafkar/sundatepicker'
 }
 
 dependencies {
